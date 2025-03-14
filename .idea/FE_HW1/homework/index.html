@@ -12,7 +12,7 @@
     <div class="logo">
         <a href="#home"><img src="img/logo.png" alt="Logo"></a>
     </div>
-    <ul class="nav-links">
+    <ul class="header-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -20,10 +20,10 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
-<a href="#top" class="up-button"><i class="fas fa-arrow-up"></i></a>
+<a href="#top" class="button-to-home"><i class="fas fa-arrow-up"></i></a>
 <div class="content-wrapper">
-    <div id="home">
-        <div class="home-content">
+    <div id="home" class="home">
+        <div class="home-div">
             <div class="home-text">
                 <h1>Professional Developers Health Care</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Enim unde voluptas perspiciatis praesentium
@@ -36,8 +36,8 @@
             </div>
         </div>
     </div>
-    <div id="about">
-        <div class="about-content">
+    <div id="about" class="about">
+        <div class="about-div">
             <div class="about-img">
                 <img class="image-tools" src="img/tools.png" alt="tools">
             </div>
@@ -69,12 +69,12 @@
             </div>
         </div>
     </div>
-    <div id="services">
+    <div id="services" class="services">
         <div class="services-header">
             <h2>How we can help you</h2>
             <h3>Read more about our services</h3>
         </div>
-        <ul class="services-grid">
+        <ul class="services-cards">
             <li>
                 <img src="img/icons/oftalmology.jpg">
                 <h4>Ophtalmology</h4>
@@ -113,10 +113,10 @@
             </li>
         </ul>
     </div>
-    <div id="pricing">
+    <div id="pricing" class="pricing">
         <h2>Our Special Offers</h2>
         <h3>Start to be healthy today</h3>
-        <div class="pricing-grid">
+        <div class="pricing-cards">
             <div class="pricing-card">
                 <h4>Allergy Check</h4>
                 <p class="price">$255</p>
@@ -158,22 +158,19 @@
             </div>
         </div>
     </div>
-    <div id="contact">
-        <div class="contact-content">
+    <div id="contact" class="contact">
+        <div class="contact-div">
             <div class="contact-image">
                 <img src="img/contact_image.jpg" alt="tools">
-
-
-
             </div>
-            <div class="contact-form">
+            <div class="form">
                 <h2>Make An Appointment</h2>
                 <h3>AND WE WILL CONTACT YOU</h3>
                 <form>
                     <input type="text" placeholder="Full Name" required>
                     <input type="email" placeholder="Email" required>
                     <input type="tel" placeholder="Phone" required>
-                    <input type="date" placeholder="mm / dd / yyyy" required>
+                    <input type="date" placeholder="mm/dd/yyyy" required>
                     <select required>
                         <option value="" disabled selected>Select Subject</option>
                         <option value="laboratory">Laboratory</option>

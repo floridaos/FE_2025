@@ -45,23 +45,23 @@ h4 {
     height: 40px;
 }
 
-.nav-links {
+.header-links {
     list-style: none;
     display: flex;
 }
 
-.nav-links li {
+.header-links li {
     margin-right: 2rem;
 }
 
-.nav-links a {
+.header-links a {
     color: black;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-.up-button {
+.button-to-home {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -77,15 +77,15 @@ h4 {
     transition: background 0.3s;
 }
 
-.up-button:hover {
+.button-to-home:hover {
     background: #0056b3;
 }
 
-.up-button i {
+.button-to-home i {
     vertical-align: middle;
 }
 
-#home {
+.home {
     background-image: url("../img/lady.jpg");
     background-repeat: no-repeat;
     background-position-y: center;
@@ -94,7 +94,7 @@ h4 {
     align-content: center;
 }
 
-.home-content {
+.home-div {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -138,7 +138,7 @@ h4 {
     border-radius: 50%;
 }
 
-.about-content {
+.about-div {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -178,7 +178,7 @@ ul {
     color: #47c8e5;
 }
 
-#services {
+.services {
     background-image: url("../img/services_bg.jpg");
     padding: 50px 20px;
 }
@@ -187,7 +187,7 @@ ul {
     text-align: center;
 }
 
-.services-grid {
+.services-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -196,29 +196,29 @@ ul {
     padding: 20px;
 }
 
-.services-grid li {
+.services-cards li {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     list-style: none;
 }
 
-.services-grid img {
+.services-cards img {
     margin-bottom: 10px;
 }
 
-.services-grid h4 {
+.services-cards h4 {
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.services-grid p {
+.services-cards p {
     font-size: 0.9em;
     color: #666;
 }
 
-#pricing {
+.pricing {
     background-image: url("../img/pricing_bg.jpg");
     padding: 50px 20px;
     text-align: center;
@@ -227,7 +227,7 @@ ul {
     background-size: cover;
 }
 
-.pricing-grid {
+.pricing-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -284,7 +284,7 @@ ul {
     background: #e0e0e0;
 }
 
-.contact-content {
+.contact-div {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -305,15 +305,15 @@ ul {
     display:block;
 }
 
-.contact-form {
+.form {
     flex: 1;
 }
 
-.contact-form h2 {
+.form h2 {
     margin-bottom: 10px;
 }
 
-.contact-form h3 {
+.form h3 {
     color: #666;
     margin-bottom: 20px;
 }
@@ -359,17 +359,17 @@ footer {
         padding: 10px;
     }
 
-    .nav-links {
+    .header-links {
         padding-right:35px;
         gap:10px;
         text-align: center;
     }
 
-    .nav-links li {
+    .header-links li {
         margin: 10px 0;
     }
 
-    .home-content, .about-content, .contact-content {
+    .home-div, .about-div, .contact-div {
         flex-direction: column;
         text-align: center;
     }
@@ -391,7 +391,7 @@ footer {
         margin-top: 20px;
     }
 
-    .services-grid, .pricing-grid {
+    .services-cards, .pricing-cards {
         grid-template-columns: 1fr;
     }
 
@@ -409,7 +409,7 @@ footer {
         padding: 30px 10px;
     }
 
-    .contact-form{
+    .form{
         align-self: stretch;
     }
 }
@@ -419,7 +419,7 @@ footer {
         padding: 15px 30px;
     }
 
-    .nav-links {
+    .header-links {
         padding-right:35px;
         gap:10px;
         text-align: center;
@@ -429,7 +429,7 @@ footer {
         margin-right: 65px;
     }
 
-    .contact-form {
+    .form {
         margin-left: 0;
         margin-top: 20px;
     }
@@ -438,13 +438,13 @@ footer {
         padding: 40px 20px;
     }
 
-    .contact-form{
+    .form{
         align-self: stretch;
     }
 }
 
 @media (min-width: 1280px) {
-    .services-grid, .pricing-grid {
+    .services-cards, .pricing-cards {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -452,7 +452,7 @@ footer {
         padding: 80px 100px;
     }
 
-    .home-content, .about-content {
+    .home-div, .about-div {
         flex-direction: row;
         text-align: left;
     }
